@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TxtDecimal = new System.Windows.Forms.TextBox();
             this.TxtBase = new System.Windows.Forms.TextBox();
             this.LblDecimal = new System.Windows.Forms.Label();
@@ -50,6 +51,8 @@
             this.TxtDecimal.Name = "TxtDecimal";
             this.TxtDecimal.Size = new System.Drawing.Size(189, 20);
             this.TxtDecimal.TabIndex = 0;
+            this.TxtDecimal.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtDecimal_KeyDown);
+            this.TxtDecimal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_KeyPress);
             // 
             // TxtBase
             // 
@@ -57,6 +60,7 @@
             this.TxtBase.Name = "TxtBase";
             this.TxtBase.Size = new System.Drawing.Size(292, 20);
             this.TxtBase.TabIndex = 1;
+            this.TxtBase.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_KeyPress);
             // 
             // LblDecimal
             // 
@@ -99,6 +103,7 @@
             0,
             0,
             0});
+            this.NumBase.ValueChanged += new System.EventHandler(this.NumBase_ValueChanged);
             // 
             // NumPlaces
             // 
@@ -190,6 +195,7 @@
             this.Controls.Add(this.LblDecimal);
             this.Controls.Add(this.TxtBase);
             this.Controls.Add(this.TxtDecimal);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "BaseConverter";
             ((System.ComponentModel.ISupportInitialize)(this.NumBase)).EndInit();
