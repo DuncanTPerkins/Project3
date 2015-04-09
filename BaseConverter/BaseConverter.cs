@@ -11,9 +11,13 @@ namespace BaseConverter
     /// </summary>
     class BaseConverter
     {
+        //Stack for converting from decimal
         static Stack<int> FromDecimalStack = new Stack<int>();
+
+        //Stack for converting to decimal
         static Stack<int> ToDecimalStack = new Stack<int>();
-        static int CounterLength = 0;
+        
+        //Final string to be returned 
         static string FinalReturnString = "";
 
         /// <summary>
@@ -32,23 +36,28 @@ namespace BaseConverter
                 num /= ConvertTo; 
             }
 
+            //run forever
             while (1==1)
             {
+                //If the stack isn't empty, pop the top off of the stack, 
+                //convert the number to a hex character if it's greater than 10,
+                //and append it to the Final String
                 try
                 {
-                    if (NumPlaces > 10)
-                    {
+                    string CheckForHex = ""; 
+                    CheckForHex = FromDecimalStack.Pop().ToString();
+                    FinalReturnString+=StringToHex(CheckForHex);
 
-                    }
-                    FinalReturnString += FromDecimalStack.Pop().ToString();
-                    CounterLength++;
                 }
 
+                //this exception is thrown if the stack is empty,
+                //so break out of the loop when this happens
                 catch (InvalidOperationException e) { 
                     break;
                 }
             }
 
+            //prepend zeroes if we're short on number places
             if (FinalReturnString.Length < NumPlaces)
             {
                 FinalReturnString = ZeroPrepender(FinalReturnString, NumPlaces - FinalReturnString.Length);
@@ -62,11 +71,69 @@ namespace BaseConverter
         /// Method for converting other Bases to Decimal (Base 10)
         /// </summary>
         /// <returns></returns>
-        public static int toDecimal()
+        public static int toDecimal(int ConvertFrom, string num )
         {
             int integer = 0;
+            int result = 0;
+            char[] ar = num.ToString().ToCharArray();
+            List<int> intList = new List<int>();
+            List<string> StringList = new List<string>();
+            foreach(char c in ar) { 
+                StringList.Add(c.ToString());
+            }
 
-            return integer;
+            for (int i = 0; i < StringList.Count - 1; i++)
+            {
+                if (int.Parse(StringList[i]) < 10)
+                {
+
+                }
+
+                else {
+                    switch (StringList[i])
+                    {
+                        case "F":
+                        StringList[i] = "15";
+                        break;
+
+                        case "E":
+                        StringList[i] = "14";
+                        break;
+
+                        case "D":
+                        StringList[i] = "13";
+                        break;
+
+                        case "C":
+                        StringList[i] = "12";
+                        break;
+
+                        case "B":
+                        StringList[i] = "11";
+                        break;
+
+                        case "A":
+                        StringList[i] = "10";
+                        break;
+                        
+
+                    }
+                }
+            }
+
+            foreach (string s in StringList)
+            {
+                intList.Add(int.Parse(s));
+            }
+
+            for (int i = 0; i < intList.Count; i++)
+            {
+                result *= ConvertFrom;
+                result += intList[i];
+            }
+
+
+            return result;
         }
 
         /// <summary>
@@ -86,11 +153,48 @@ namespace BaseConverter
             return localstr;
         }
 
-        public static string StringToHex(string str) )
+        /// <summary>
+        /// Converts a decimal value to its hexadecimal equivalent
+        /// </summary>
+        /// <param name="str">string to be converted</param>
+        /// <returns>converted string</returns>
+        public static string StringToHex(string str) 
         {
+            if(int.Parse(str) < 10) {
+            }
+            else { 
+            switch (str)
+            {
+                case "10":
+                str = "A";
+                break;
 
+                case "11": 
+                str = "B";
+                break;
+
+                case "12": 
+                str = "C";
+                break;
+
+                case "13": 
+                str = "D";
+                break;
+
+                case "14": 
+                str = "E";
+                break;
+
+                case "15": 
+                str = "F";
+                break;
+
+                 }
+            }
+            return str;
+            }
         }
     }
 
 
-}
+

@@ -80,16 +80,36 @@
             // NumBase
             // 
             this.NumBase.Location = new System.Drawing.Point(313, 65);
+            this.NumBase.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.NumBase.Name = "NumBase";
             this.NumBase.Size = new System.Drawing.Size(66, 20);
             this.NumBase.TabIndex = 4;
+            this.NumBase.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // NumPlaces
             // 
             this.NumPlaces.Location = new System.Drawing.Point(515, 65);
+            this.NumPlaces.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.NumPlaces.Name = "NumPlaces";
             this.NumPlaces.Size = new System.Drawing.Size(53, 20);
             this.NumPlaces.TabIndex = 5;
+            this.NumPlaces.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label1
             // 
@@ -127,6 +147,7 @@
             this.BtnToDecimal.TabIndex = 9;
             this.BtnToDecimal.Text = "Convert to Decimal";
             this.BtnToDecimal.UseVisualStyleBackColor = true;
+            this.BtnToDecimal.Click += new System.EventHandler(this.BtnToDecimal_Click);
             // 
             // BtnExit
             // 

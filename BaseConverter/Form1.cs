@@ -43,5 +43,10 @@ namespace BaseConverter
         {
             Application.Exit();
         }
+
+        private void BtnToDecimal_Click(object sender, EventArgs e)
+        {
+            TxtDecimal.Text = BaseConverter.toDecimal((int)NumBase.Value, TxtBase.Text).ToString();
+        }
     }
 }
