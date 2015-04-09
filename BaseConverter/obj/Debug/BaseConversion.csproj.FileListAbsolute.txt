@@ -1,1 +1,9 @@
-C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\bin\Debug\BaseConverter.exe.config
+C:\Users\TEMP.ETSU.000\Downloads\Project3-master\Project3-master\BaseConverter\bin\Debug\BaseConverter.exe.config
+C:\Users\TEMP.ETSU.000\Downloads\Project3-master\Project3-master\BaseConverter\bin\Debug\BaseConverter.exe
+C:\Users\TEMP.ETSU.000\Downloads\Project3-master\Project3-master\BaseConverter\bin\Debug\BaseConverter.pdb
+C:\Users\TEMP.ETSU.000\Downloads\Project3-master\Project3-master\BaseConverter\obj\Debug\BaseConversion.csprojResolveAssemblyReference.cache
+C:\Users\TEMP.ETSU.000\Downloads\Project3-master\Project3-master\BaseConverter\obj\Debug\BaseConverter.Form1.resources
+C:\Users\TEMP.ETSU.000\Downloads\Project3-master\Project3-master\BaseConverter\obj\Debug\BaseConverter.Properties.Resources.resources
+C:\Users\TEMP.ETSU.000\Downloads\Project3-master\Project3-master\BaseConverter\obj\Debug\BaseConversion.csproj.GenerateResource.Cache
+C:\Users\TEMP.ETSU.000\Downloads\Project3-master\Project3-master\BaseConverter\obj\Debug\BaseConverter.exe
+C:\Users\TEMP.ETSU.000\Downloads\Project3-master\Project3-master\BaseConverter\obj\Debug\BaseConverter.pdb

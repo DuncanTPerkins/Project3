@@ -99,7 +99,6 @@
             this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Base:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -118,6 +117,7 @@
             this.BtnToBase.TabIndex = 8;
             this.BtnToBase.Text = "Convert From Decimal";
             this.BtnToBase.UseVisualStyleBackColor = true;
+            this.BtnToBase.Click += new System.EventHandler(this.BtnToBase_Click);
             // 
             // BtnToDecimal
             // 
@@ -136,6 +136,7 @@
             this.BtnExit.TabIndex = 10;
             this.BtnExit.Text = "Exit";
             this.BtnExit.UseVisualStyleBackColor = true;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // Form1
             // 
