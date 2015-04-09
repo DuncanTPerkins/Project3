@@ -39,6 +39,7 @@
             this.BtnToBase = new System.Windows.Forms.Button();
             this.BtnToDecimal = new System.Windows.Forms.Button();
             this.BtnExit = new System.Windows.Forms.Button();
+            this.lblDirection = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NumBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumPlaces)).BeginInit();
             this.SuspendLayout();
@@ -80,8 +81,13 @@
             // NumBase
             // 
             this.NumBase.Location = new System.Drawing.Point(313, 65);
+            this.NumBase.Maximum = new decimal(new int[] {
+            16,
+            0,
+            0,
+            0});
             this.NumBase.Minimum = new decimal(new int[] {
-            1,
+            2,
             0,
             0,
             0});
@@ -89,7 +95,7 @@
             this.NumBase.Size = new System.Drawing.Size(66, 20);
             this.NumBase.TabIndex = 4;
             this.NumBase.Value = new decimal(new int[] {
-            1,
+            2,
             0,
             0,
             0});
@@ -106,7 +112,7 @@
             this.NumPlaces.Size = new System.Drawing.Size(53, 20);
             this.NumPlaces.TabIndex = 5;
             this.NumPlaces.Value = new decimal(new int[] {
-            1,
+            5,
             0,
             0,
             0});
@@ -123,11 +129,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(423, 67);
+            this.label2.Location = new System.Drawing.Point(385, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 13);
+            this.label2.Size = new System.Drawing.Size(130, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Places in Result:";
+            this.label2.Text = "Minimum Places in Result:";
             // 
             // BtnToBase
             // 
@@ -159,11 +165,20 @@
             this.BtnExit.UseVisualStyleBackColor = true;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
+            // lblDirection
+            // 
+            this.lblDirection.AutoSize = true;
+            this.lblDirection.Location = new System.Drawing.Point(226, 42);
+            this.lblDirection.Name = "lblDirection";
+            this.lblDirection.Size = new System.Drawing.Size(0, 13);
+            this.lblDirection.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 185);
+            this.Controls.Add(this.lblDirection);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnToDecimal);
             this.Controls.Add(this.BtnToBase);
@@ -197,6 +212,7 @@
         private System.Windows.Forms.Button BtnToBase;
         private System.Windows.Forms.Button BtnToDecimal;
         private System.Windows.Forms.Button BtnExit;
+        private System.Windows.Forms.Label lblDirection;
     }
 }
 

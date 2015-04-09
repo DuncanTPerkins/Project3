@@ -1,4 +1,15 @@
-﻿using System;
+﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	Project:	    Project 3
+//	File Name:		Form1.cs
+//	Description:    Converts between base numerical systems
+//	Course:			CSCI 2210-001 - Data Structures
+//	Author:			Duncan Perkins, perkinsdt@goldmail.etsu.edu, Department of Computing, East Tennessee State University
+//	Created:	    April 7, 2015
+//	Copyright:		Duncan Perkins, 2015
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +43,10 @@ namespace BaseConverter
         {
             TxtBase.Text = BaseConverter.FromDecimal((int)NumBase.Value, int.Parse(TxtDecimal.Text), (int)NumPlaces.Value);
             LblBase.Text = "Integer Value in Base " + NumBase.Value;
+            lblDirection.Text = "--->";
+            System.Drawing.Color col = System.Drawing.ColorTranslator.FromHtml("#101B83");
+            TxtBase.ForeColor = col;
+            TxtDecimal.ForeColor = SystemColors.WindowText;
         }
 
         /// <summary>
@@ -44,9 +59,16 @@ namespace BaseConverter
             Application.Exit();
         }
 
+        /// <summary>
+        /// Click event for Button that converts from bases between 2 and 16 to Decimal (Base 10) 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnToDecimal_Click(object sender, EventArgs e)
         {
             TxtDecimal.Text = BaseConverter.toDecimal((int)NumBase.Value, TxtBase.Text).ToString();
+            LblBase.Text = "Integer Value in Base " + NumBase.Value;
+            lblDirection.Text = "<---";
         }
     }
 }

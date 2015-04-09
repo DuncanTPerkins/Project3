@@ -1,4 +1,15 @@
-﻿using System;
+﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	Project:	    Project 3
+//	File Name:		BaseConverter.cs
+//	Description:    Converts between base numerical systems
+//	Course:			CSCI 2210-001 - Data Structures
+//	Author:			Duncan Perkins, perkinsdt@goldmail.etsu.edu, Department of Computing, East Tennessee State University
+//	Created:	    April 7, 2015
+//	Copyright:		Duncan Perkins, 2015
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -82,9 +93,12 @@ namespace BaseConverter
                 StringList.Add(c.ToString());
             }
 
-            for (int i = 0; i < StringList.Count - 1; i++)
+            for (int i = 0; i < StringList.Count; i++)
             {
-                if (int.Parse(StringList[i]) < 10)
+                int n;
+                 bool isNumeric = int.TryParse(StringList[i], out n);
+
+                if (isNumeric)
                 {
 
                 }
