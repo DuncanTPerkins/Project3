@@ -24,7 +24,7 @@ namespace BaseConverter
     /// <summary>
     /// Form class for GUI of application
     /// </summary>
-    public partial class Form1 : Form
+    public partial class ConverterForm : Form
     {
         //Keypress events for the Base text box
         System.Windows.Forms.KeyEventHandler keyeventDec;
@@ -37,7 +37,7 @@ namespace BaseConverter
         /// <summary>
         /// Constructor for GUI form class
         /// </summary>
-        public Form1()
+        public ConverterForm()
         {
             InitializeComponent();
             keyeventDec = TxtDecimal_KeyDown;

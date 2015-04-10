@@ -51,16 +51,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseConverter.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="ConverterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ConverterForm.Designer.cs">
+      <DependentUpon>ConverterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseConversion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ConverterForm.resx">
+      <DependentUpon>ConverterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,9 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\favicon.ico" />

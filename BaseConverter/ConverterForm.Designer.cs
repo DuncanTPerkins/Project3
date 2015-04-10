@@ -1,6 +1,6 @@
 ﻿namespace BaseConverter
 {
-    partial class Form1
+    partial class ConverterForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConverterForm));
             this.TxtDecimal = new System.Windows.Forms.TextBox();
             this.TxtBase = new System.Windows.Forms.TextBox();
             this.LblDecimal = new System.Windows.Forms.Label();

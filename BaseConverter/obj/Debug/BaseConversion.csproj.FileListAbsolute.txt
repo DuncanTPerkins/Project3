@@ -11,8 +11,8 @@ C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\bin\Debug\BaseConverter.
 C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\obj\Debug\BaseConverter.exe
 C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\obj\Debug\BaseConverter.pdb
 C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\obj\Debug\BaseConversion.csprojResolveAssemblyReference.cache
-C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\obj\Debug\BaseConverter.Form1.resources
 C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\obj\Debug\BaseConverter.Properties.Resources.resources
 C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\obj\Debug\BaseConversion.csproj.GenerateResource.Cache
 C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\bin\Debug\BaseConverter.exe
 C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\bin\Debug\BaseConverter.pdb
+C:\Users\Duncan\Documents\GitHub\Project3\BaseConverter\obj\Debug\BaseConverter.ConverterForm.resources
